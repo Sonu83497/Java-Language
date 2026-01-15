@@ -1,7 +1,7 @@
 import java.util.Scanner;
 public class Logical{
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
+        try(Scanner input = new Scanner(System.in)){
         System.out.println("Welcome to ticket discount Calculator :");
         System.out.print("Please Enter your age : ");
         int age = input.nextInt();
@@ -16,7 +16,6 @@ public class Logical{
         }else{
             System.out.println("Sorry! No discount for you");
         }
-        input.close();
     }
-
+    }
 }

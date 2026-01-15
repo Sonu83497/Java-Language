@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class Relational {
 
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
+       try( Scanner input = new Scanner(System.in)){
         System.out.println("Welcome to driving Licence Portal :");
         System.out.print("Please Enter Your age : ");
         int age = input.nextInt();
@@ -16,4 +16,5 @@ public class Relational {
         }
         input.close();
     }
+}
 }
